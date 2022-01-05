@@ -8,7 +8,7 @@ const args = process.argv || [];
 const test = args.some(arg => arg.includes('jasmine'));
 
 const databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
-
+console.log("Database uri", process.env)
 if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
 }
